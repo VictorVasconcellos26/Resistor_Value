@@ -8,4 +8,14 @@ resistor_cores = {'Preto': '0',
                   'Cinza': '8',
                   'Branco': '9'
                   }
-print(resistor_cores)
+
+
+def codigo():
+    numero = input("Digite o código solicitado: ")
+    valor_resistor = int(numero[0] + numero[1])
+    valor_resistor = valor_resistor * int(numero[2])
+    print(valor_resistor)
+    return
+
+
+codigo()
