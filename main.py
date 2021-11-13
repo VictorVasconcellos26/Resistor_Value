@@ -10,7 +10,12 @@ resistor_colors = {'0': '1',
                    '9': '1000000000'
                    }
 
-number = input("Digite o código solicitado: ")
+while True:
+    number = input("Digite o código solicitado: ")
+    if len(number) > 3 or len(number) < 3:
+        print("Código não suportado, tente novamente.")
+    else:
+        break
 
 
 def code():
@@ -24,4 +29,3 @@ def code():
 
 
 code()
-
