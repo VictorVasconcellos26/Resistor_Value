@@ -20,11 +20,11 @@ while True:
 
 def code():
     multiplier = number[2]
-    valor_resistor = int(number[0] + number[1])
-    valor_resistor = valor_resistor * int(resistor_colors.setdefault(multiplier))
-    valor_resistor2 = f"{valor_resistor:_.1f}"
-    valor_resistor2 = valor_resistor2.replace('.', ',').replace('_', '.')
-    print(f"O valor do resistor de código ({number}) é de {valor_resistor2} ohms!")
+    value_resistor_default = int(number[0] + number[1])
+    value_resistor_default = value_resistor_default * int(resistor_colors.setdefault(multiplier))
+    value_resistor_index = f"{value_resistor_default:_.1f}"
+    value_resistor_index = value_resistor_index.replace('.', ',').replace('_', '.')
+    print(f"O valor do resistor de código ({number}) é de {value_resistor_index} ohms!")
     return
 
 
