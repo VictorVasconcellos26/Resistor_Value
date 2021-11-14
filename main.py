@@ -10,6 +10,18 @@ resistor_colors = {'0': '1',
                    '9': '1000000000'
                    }
 
+resistor_patters = {'0': 'Preto',
+                    '1': 'Marrom',
+                    '2': 'Vermelho',
+                    '3': 'Laranja',
+                    '4': 'Amarelo',
+                    '5': 'Verde',
+                    '6': 'Azul',
+                    '7': 'Violeta',
+                    '8': 'Cinza',
+                    '9': 'Branco'
+                    }
+
 while True:
     number = input("Digite o código solicitado: ")
     if len(number) > 3 or len(number) < 3:
