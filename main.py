@@ -22,6 +22,8 @@ resistor_patters = {'0': 'Preto',
                     '9': 'Branco'
                     }
 
+# Repetidor While que impossibilita que nem mais e nem menos do que 3 "dígitos" sejam escritos.
+
 while True:
     number = input("Digite o código solicitado: ")
     if len(number) > 3 or len(number) < 3:
@@ -29,6 +31,8 @@ while True:
     else:
         break
 
+
+# Função Core que fará a conversão do código de string para inteiro, e mostrará o valor de ohms que aquele código vale)
 
 def code():
     multiplier = number[2]
@@ -42,6 +46,7 @@ def code():
     return
 
 
+# Função para determinar, a parti de um dicionario pré-programado, qual cor o código escolhido representa.
 def colors_reference():
     print("""============================
 As cores selecionadas foram:
@@ -49,7 +54,7 @@ As cores selecionadas foram:
     """)
     for colors in number:
         reference_number = resistor_patters.setdefault(colors)
-        print(colors,":",reference_number)
+        print(colors, ":", reference_number)
     return
 
 
